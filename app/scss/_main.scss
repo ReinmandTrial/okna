@@ -1,0 +1,147 @@
+
+
+
+.blue {color: #1B0C45;}
+.orange {color: #EF8F59}
+.black {color:#4F4E4E}
+.white {color:#fff}
+.bg-orange {background-color: #EF8F59;}
+
+
+.h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+}
+
+.h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.btn { 
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+}
+.title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+}
+.title1 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+}
+.text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+}
+.text2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+}
+.number {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+}
+.text18 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+}
+
+.about {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__description {
+        max-width: 608px;
+    }
+    &__quality {
+        display: flex;
+        justify-content: center;
+    }
+    &__quality-item {
+        width: 330px;
+        text-align: center;
+        padding-bottom: 20px;
+        &:not(:last-child) {
+            border-right: 1px solid #F7F0EA;;
+        }
+    }
+    &__quality-title {
+        margin-bottom: 5px;
+    }
+}
+
+
+.certificate {
+    .container {
+        background-image: url(../images/bg-certificate.png);
+        background-repeat: no-repeat;
+    }
+    &__content {
+        display: flex;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 53px 0px 66px 0px;
+        justify-content: space-between;
+    }
+    &__info {
+        max-width: 610px;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__description {
+        margin-bottom: 30px;
+    }
+    &__nav {
+        margin-bottom: 30px;
+    }
+    &__item {
+        display: flex;
+        span {
+            margin-right: 10px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+.btn {
+    &__swiper {
+        padding: 15px 20px;
+        border-radius:  50px;
+        width: 60px;
+        height: 60px;
+    }
+    &__swiper-next {
+        rotate: 180deg;
+    }
+}
+.swiper__buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0, -50%);
+}
