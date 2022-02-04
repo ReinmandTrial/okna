@@ -1,33 +1,44 @@
  
   new Swiper('.certificate__swiper', {
     direction: 'horizontal',
-    // loop: true,
 	navigation: {
 		prevEl: '.btn__swiper-prev',
 		nextEl: '.btn__swiper-next',
 	},
-	// mousewheel: {
-	// 	sensitivity: 1,
-	// },
-	// breakpoints: {
-	// 	769: {
-	// 		spaceBetween: 20,
-	// 	},
-	// 	576: {
-	// 		slidesPerView: 'auto',
-	// 	},
-	// 	320: {
-	// 		slidesPerView: 2,
-	// 		spaceBetween: 8,
-	// 	}
-	// },
     autoHeight: true,
-	slidesPerView: '1',
-    slidesPerColumn: '1',
-	// watchOverfбез low: true,
-	// slidesPerView: 1,
-	// watchOverflow: true,
-	// spaceBetween: 20,
+	slidesPerView: 1,
+})
+
+new Swiper('.reviews__swiper', {
+	direction: 'horizontal',
+	navigation: {
+		prevEl: '.btn__swiper-prev',
+		nextEl: '.btn__swiper-next',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+	},
 	// loop: true,
-	// mousewheelControl: false,
+    autoHeight: true,
+	slidesPerView: 3,
+	spaceBetween: 55,
+	// initialSlide: 1,
+	watchOverflow: true,
+	mousewheelControl: false,
+})
+
+new Swiper('.partners__swiper', {
+	direction: 'horizontal',
+	navigation: {
+		prevEl: '.btn__swiper-prev',
+		nextEl: '.btn__swiper-next',
+	},
+	// loop: true,
+    autoHeight: true,
+	slidesPerView: 3,
+	spaceBetween: 26,
+	// initialSlide: 1,
+	watchOverflow: true,
+	mousewheelControl: false,
 })
