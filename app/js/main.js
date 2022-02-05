@@ -1,5 +1,6 @@
 new Swiper('.reviews__swiper', {
-	direction: 'horizontal',
+	// direction: 'horizontal',	
+	loop: true,
 	navigation: {
 		prevEl: '.btn__swiper-prev',
 		nextEl: '.btn__swiper-next',
@@ -33,13 +34,12 @@ new Swiper('.reviews__swiper', {
 		// 	spaceBetween: 8,
 		// }
 	},
-	// loop: true,
-    autoHeight: true,
+	// autoHeight: true,
 	// slidesPerView: 3,
 	// spaceBetween: 55,
 	// initialSlide: 1,
-	watchOverflow: true,
-	mousewheelControl: false,
+	// watchOverflow: true,
+	// mousewheelControl: false,
 })
 
 new Swiper('.partners__swiper', {
@@ -58,20 +58,20 @@ new Swiper('.partners__swiper', {
 			spaceBetween: 20,
 		},
 	},
-	// loop: true,
-    autoHeight: true,
+	loop: true,
+	// autoHeight: true,
 	// initialSlide: 1,
-	watchOverflow: true,
-	mousewheelControl: false,
+	// watchOverflow: true,
+	// mousewheelControl: false,
 })
 
 
 new Swiper('.certificate__swiper', {
-    direction: 'horizontal',
+	direction: 'horizontal',
 	navigation: {
 		prevEl: '.btn__swiper-prev',
 		nextEl: '.btn__swiper-next',
 	},
-    autoHeight: true,
+	autoHeight: true,
 	slidesPerView: 1,
 })

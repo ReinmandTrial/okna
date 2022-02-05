@@ -1,24 +1,42 @@
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    font-family: "RoadRadio";
     &:hover {
     }
     &:focus {
     }
     &:active {
     }
-    &-primary {
+    &-orange {
+        padding: 14px 30px 11px;
+        color: $white;
+        min-width: 280px;
+        background: $orange;
+        border: 1px solid $orange;
         &:hover {
+            background: $white;
+            color: $orange;
         }
-    }
-    &-secondary {
-        &:hover {
-        }
-    }
-    &-contour {
-        &:hover {
-        }
-    }
-    &-filter {
-        &:hover {
+        &-small {
+            padding: 9px 20px;
+            min-width: 187px;
+            font-size: 13px;
+            line-height: 16px;
+            @media (max-width: 575.98px) {
+                font-size: 18px;
+                line-height: 18px;
+            }
         }
     }
 }
