@@ -8,6 +8,19 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 
+// const webp = require('imagemin-webp');
+// const extReplace = require('gulp-ext-replace');
+// const gulp = require('gulp');
+
+// gulp.task('default', () => {
+//   return gulp.src('app/images/*')
+//     .pipe(imagemin([
+//       webp({ quality: 50 })
+//     ]))
+//     .pipe(extReplace('.webp'))
+//     .pipe(gulp.dest('app/images/'))
+// });
+
 function browsersync() {
   browserSync.init({
     server: {
@@ -37,6 +50,9 @@ function images() {
     ))
     .pipe(dest('dist/images'))
 }
+
+
+
 
 function scripts() {
   return src([
